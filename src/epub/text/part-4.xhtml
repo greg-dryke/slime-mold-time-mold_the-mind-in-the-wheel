@@ -6,7 +6,7 @@
 		<link href="../css/local.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body epub:type="bodymatter z3998:fiction">
-		<section id="chapter-4" epub:type="chapter">
+		<section id="part-4" epub:type="chapter">
 			<h2 epub:type="title"><span epub:type="label">Part</span> <span epub:type="z3998:roman">IV</span>: Learning</h2>
 			<blockquote class="is-layout-flow wp-block-quote wp-block-quote-is-layout-flow">
 				<p>
@@ -53,7 +53,8 @@
 			<p>If some day it is 98 °F outside, and there’s a campfire, will the hot governor remember what it learned? At 98 °F, you are too hot, the hot governor has an error. Will it remember that standing near the campfire will increase your body temperature, and so will increase its error? Or will it have to learn that lesson all over again, because last time you encountered a campfire, it was sleeping, because it had no error.</p>
 			<p>Similarly, we don’t know if a governor will learn more when its error is bigger. But it seems plausible. If it is 78 °F and you go stand near a campfire, that will increase your hot governor’s error from small to medium, and it will remember that. But if it is 98 °F and you go stand near a campfire, that will increase your hot governor’s error from large to extra large! It seems possible that the hot governor will remember that even more, that increasing an error will be remembered more seriously when the error is already somewhat large.</p>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
-			<h3 class="wp-block-heading">The Part of the Book with Some Math</h3>
+		    <section id="part-4-2" epub:type="z3998:subchapter">
+			<h3 epub:type="title">The Part of the Book with Some Math</h3>
 			<p>We probably won’t have to invent the exact rules that run inside a mouse’s head when it’s learning to manage all those levers. Our guess is that many of these algorithms have already been discovered, in past research on <strong>reinforcement learning</strong>.</p>
 			<p>A complete recap of reinforcement learning is beyond the scope of this book, but we can give you a rough sense, and suggest the few tweaks it might need to fit into our new paradigm.</p>
 			<p>There are many kinds of reinforcement learning algorithms, but the difference between them isn’t our current focus. For today we’ll use Q-learning as our example, a model-free algorithm that uses this update function:</p>
@@ -95,13 +96,16 @@
 			<p>Reinforcement learning assumes that each agent has a single value function that it tries to maximize, and that all kinds of value are the same. In this perspective, 2 points from hot chocolate is the same as 2 points worth of high fives.</p>
 			<p>The cybernetic paradigm rejects that — abstract “rewards” don’t exist. Instead, governors track specific changes. So in this case, an algorithm like Q-learning is running inside each of the governors. The keep-mouse-from-getting-too cold governor is keeping track of what different actions in different states do to its error signal. The keep-mouse-from-getting-too hot governor is keeping track of what different actions in different states do to its error signal.</p>
 			<p>Each of the governors has its own ledger of the effect of different possible actions, and is keeping track of how each of these actions influences the signal(s) it cares about. Then all the governors get together and vote for their favorite action(s).</p>
+            </section>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
-			<h3 class="wp-block-heading">Recap</h3>
+		    <section id="part-4-3" epub:type="z3998:subchapter">
+			<h3 epub:type="title">Recap</h3>
 			<ul class="wp-block-list">
 				<li>Building a mind around notions of “value” <strong>quickly leads you into contradictions</strong>.</li>
 				<li>Value is absurd. Behaviors have <strong>specific rather than general consequences</strong>.</li>
 				<li>We think the mind doesn’t represent “value” at all. Instead, governors track how actions affect their error signals. <strong>Governors clearly learn how actions change the world, not whether or not they are “valuable”.</strong> There is no reward and no punishment.</li>
 			</ul>
+            </section>
 		</section>
 	</body>
 </html>

@@ -18,7 +18,9 @@
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
 		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
 		<meta property="schema:accessMode">textual</meta>
+		<meta property="schema:accessMode">visual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
+		<meta property="schema:accessibilityFeature">alternativeText</meta>
 		<meta property="schema:accessibilityFeature">readingOrder</meta>
 		<meta property="schema:accessibilityFeature">structuralNavigation</meta>
 		<meta property="schema:accessibilityFeature">tableOfContents</meta>
@@ -86,13 +88,82 @@
 		<item href="css/se.css" id="se.css" media-type="text/css"/>
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
+		<item href="images/part1/body_temp_chart.png" id="body_temp_chart.png" media-type="image/png"/>
+		<item href="images/part1/dictionaries_interstellar_meme.jpg" id="dictionaries_interstellar_meme.jpg" media-type="image/jpeg"/>
+		<item href="images/part1/disgust_chart.png" id="disgust_chart.png" media-type="image/png"/>
+		<item href="images/part1/fear_chart.png" id="fear_chart.png" media-type="image/png"/>
+		<item href="images/part1/harm_pain_chart.png" id="harm_pain_chart.png" media-type="image/png"/>
+		<item href="images/part1/having_to_pee.png" id="having_to_pee.png" media-type="image/png"/>
+		<item href="images/part1/horny_food.jpg" id="horny_food.jpg" media-type="image/jpeg"/>
+		<item href="images/part1/hunger_chart.png" id="hunger_chart.png" media-type="image/png"/>
+		<item href="images/part1/monty_python_runaway.png" id="monty_python_runaway.png" media-type="image/png"/>
+		<item href="images/part1/organisms_using_faculties.png" id="organisms_using_faculties.png" media-type="image/png"/>
+		<item href="images/part1/pandemic_danger.png" id="pandemic_danger.png" media-type="image/png"/>
+		<item href="images/part1/salt_lick_chart.png" id="salt_lick_chart.png" media-type="image/png"/>
+		<item href="images/part1/salt_lick_photo.png" id="salt_lick_photo.png" media-type="image/png"/>
+		<item href="images/part1/sims_emotions.png" id="sims_emotions.png" media-type="image/png"/>
+		<item href="images/part1/status_shame_chart.png" id="status_shame_chart.png" media-type="image/png"/>
+		<item href="images/part1/steam_engine_regulator.png" id="steam_engine_regulator.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_ac.png" id="thermostat_ac.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_actual_picture.png" id="thermostat_actual_picture.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_background.png" id="thermostat_background.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_coil.png" id="thermostat_coil.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_comparator.png" id="thermostat_comparator.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_control_element.png" id="thermostat_control_element.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_disturbances.png" id="thermostat_disturbances.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_error.png" id="thermostat_error.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_error_zero.png" id="thermostat_error_zero.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_furnace_levels.png" id="thermostat_furnace_levels.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_furnace_onoff.png" id="thermostat_furnace_onoff.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_furnace_red.png" id="thermostat_furnace_red.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_perception.png" id="thermostat_perception.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_perception_big_error.png" id="thermostat_perception_big_error.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_sensor.png" id="thermostat_sensor.png" media-type="image/png"/>
+		<item href="images/part1/thermostat_setpoint.png" id="thermostat_setpoint.png" media-type="image/png"/>
+		<item href="images/part1/thirst_chart.png" id="thirst_chart.png" media-type="image/png"/>
+		<item href="images/part2/culture_diffs_chart.jpg" id="culture_diffs_chart.jpg" media-type="image/jpeg"/>
+		<item href="images/part2/forum_votes.png" id="forum_votes.png" media-type="image/png"/>
+		<item href="images/part2/fridge_photo.jpg" id="fridge_photo.jpg" media-type="image/jpeg"/>
+		<item href="images/part2/governor_votes_chart.png" id="governor_votes_chart.png" media-type="image/png"/>
+		<item href="images/part2/hunger_chart.png" id="hunger_chart.png" media-type="image/png"/>
+		<item href="images/part2/minerals_meme.png" id="minerals_meme.png" media-type="image/png"/>
+		<item href="images/part2/phil_collins_photo.png" id="phil_collins_photo.png" media-type="image/png"/>
+		<item href="images/part3/big5_chart.png" id="big5_chart.png" media-type="image/png"/>
+		<item href="images/part3/fear_danger_chart.png" id="fear_danger_chart.png" media-type="image/png"/>
+		<item href="images/part3/modem_screaming_tweets.png" id="modem_screaming_tweets.png" media-type="image/png"/>
+		<item href="images/part3/normal_dist_example.png" id="normal_dist_example.png" media-type="image/png"/>
+		<item href="images/part3/spreadsheet_relax_meme.png" id="spreadsheet_relax_meme.png" media-type="image/png"/>
+		<item href="images/part3/words_known_genders.png" id="words_known_genders.png" media-type="image/png"/>
+		<item href="images/part4/rat_value_is_absurd.png" id="rat_value_is_absurd.png" media-type="image/png"/>
+		<item href="images/part4/reinforcement_update_function.png" id="reinforcement_update_function.png" media-type="image/png"/>
+		<item href="images/prologue/atom_model_evolution.png" id="atom_model_evolution.png" media-type="image/png"/>
+		<item href="images/prologue/brain_fog_wiki.png" id="brain_fog_wiki.png" media-type="image/png"/>
+		<item href="images/prologue/complex_system_gall_quote.png" id="complex_system_gall_quote.png" media-type="image/png"/>
+		<item href="images/prologue/computer_guts.png" id="computer_guts.png" media-type="image/png"/>
+		<item href="images/prologue/depression_chart.jpg" id="depression_chart.jpg" media-type="image/jpeg"/>
+		<item href="images/prologue/dishwasher_diagram.png" id="dishwasher_diagram.png" media-type="image/png"/>
+		<item href="images/prologue/dishwasher_dials.png" id="dishwasher_dials.png" media-type="image/png"/>
+		<item href="images/prologue/game_of_life_example.png" id="game_of_life_example.png" media-type="image/png"/>
+		<item href="images/prologue/game_of_life_hard.png" id="game_of_life_hard.png" media-type="image/png"/>
+		<item href="images/prologue/game_of_life_rules.png" id="game_of_life_rules.png" media-type="image/png"/>
+		<item href="images/prologue/game_of_life_small.png" id="game_of_life_small.png" media-type="image/png"/>
+		<item href="images/prologue/ghibli_engine.png" id="ghibli_engine.png" media-type="image/png"/>
+		<item href="images/prologue/lavoisier_goggles.png" id="lavoisier_goggles.png" media-type="image/png"/>
+		<item href="images/prologue/lavoisier_portrait.png" id="lavoisier_portrait.png" media-type="image/png"/>
+		<item href="images/prologue/legally_blonde_pool.png" id="legally_blonde_pool.png" media-type="image/png"/>
+		<item href="images/prologue/reprogrammed_mario.png" id="reprogrammed_mario.png" media-type="image/png"/>
+		<item href="images/prologue/skill_challenge_chart.png" id="skill_challenge_chart.png" media-type="image/png"/>
+		<item href="images/prologue/solved_psych.png" id="solved_psych.png" media-type="image/png"/>
+		<item href="images/prologue/statistical_physics.png" id="statistical_physics.png" media-type="image/png"/>
+		<item href="images/prologue/thc_booze_joke_tweet.jpg" id="thc_booze_joke_tweet.jpg" media-type="image/jpeg"/>
 		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
-		<item href="text/chapter-1.xhtml" id="chapter-1.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-2.xhtml" id="chapter-2.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-3.xhtml" id="chapter-3.xhtml" media-type="application/xhtml+xml"/>
-		<item href="text/chapter-4.xhtml" id="chapter-4.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-2.xhtml" id="part-2.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-3.xhtml" id="part-3.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-4.xhtml" id="part-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/prologue.xhtml" id="prologue.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
 		<item href="toc.xhtml" id="toc.xhtml" media-type="application/xhtml+xml" properties="nav"/>
@@ -100,10 +171,11 @@
 	<spine>
 		<itemref idref="titlepage.xhtml"/>
 		<itemref idref="imprint.xhtml"/>
-		<itemref idref="chapter-1.xhtml"/>
-		<itemref idref="chapter-2.xhtml"/>
-		<itemref idref="chapter-3.xhtml"/>
-		<itemref idref="chapter-4.xhtml"/>
+		<itemref idref="prologue.xhtml"/>
+		<itemref idref="part-1.xhtml"/>
+		<itemref idref="part-2.xhtml"/>
+		<itemref idref="part-3.xhtml"/>
+		<itemref idref="part-4.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
 	</spine>
