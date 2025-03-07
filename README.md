@@ -5,3 +5,11 @@ steps for image clean up
 3. Macro: `qa%c$/>ESCq` to clean up the end. Then just do `@a` from the start of the img tag
 4. For captions, same `v` step, then manually do `%i/` and tap over to drop the figcaption to a new line
 5. clean up the fig capture end with `$bbbd$`. some number of b's to get through the the figure and div
+
+TODO:
+- Wire up images
+- fix lints, lots there whew
+- Clean up the colophon pages for actual publish, it's not a fully supprted standard ebook, just do a blurb thanking?
+- actually label everything?
+- Try to pull it into a submodule, might be too late
+- Remove the junk images up above, can just do it in the history though as I wire up images
