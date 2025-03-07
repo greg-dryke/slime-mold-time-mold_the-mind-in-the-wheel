@@ -26,68 +26,68 @@
 			<p>Thermostats are designed to keep your house at a certain temperature. You don’t want the house to get much hotter than the target temperature, and you don’t want it to get much colder.</p>
 			<p>To make this happen, the thermostat is designed to drive the temperature of the house towards the target. If you’re not too allergic to anthropomorphism, we can say that the <strong>goal</strong> of the thermostat is to keep the house at that temperature. Or we can describe it as a control system, and say that the thermostat is designed to <strong>control</strong> the temperature of the house, keeping it as close to the target as possible.</p>
 			<p>The basic idea is simple. We divide the world into the inside of the thermostat and the outside of the thermostat, like so:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeTW7ZtExcmNU3FH6INK2fNj4rR859LbshQkGhXFAaFMQRMHKZL05QrfL8YZ1omqDsipCQFgNngwDuifHHN3CNKwVJ3AaQrCYyZ9Uo23xqOWSreyvDZCB2UTAzrWgZe2nmvdidnZA?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_background.png" style="width:500px"/>
 			<p/>
 			<p>To begin with, we need some kind of <strong>sensor</strong>(sometimes called an <strong>input function</strong>) that can read the temperature of the house and communicate that information to the inside of the thermostat.</p>
 			<p>Some sensors are better than others, but it doesn’t really matter. As long as the sensor can get a rough sense of the temperature of the house and transport that information to the guts of the device, the thermostat should be able to do its job.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf1SG5tQEidjSm5yF98yVTvvRxmk3i7OBcddB4eVYtD6Y1skm1BLNLlzf0rEN9urg3NyYE8LPy-1aPgZA1GF7svALhUFthjayHCuLfrj9YdZ0lSGZDfSXJ4qOTpxRSpRygHlwbfuA?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_sensor.png" style="width:500px"/>
 			<p/>
 			<p>The sensor is a part of the thermostat, so we color-code it white, but it interacts with the outside world, so the box sticks a little bit out into the house.</p>
 			<p>The sensor creates a signal that we call a <strong>perception</strong>. In this case, the sensor perceives that the house is 68 degrees Fahrenheit.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXePzTiqgmb8e81h1sfn7GV2mnXBs32VuFp15QnAe4ycFZYZsT4or9J2nM3a-v7vYILLp8UQkqLuUIt9quHtgUh8QcKoOA4iQYSQyJaSp3OlcIOaxnEBM3somqNUBiUZy7RnS4to?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_perception.png" style="width:500px"/>
 			<p/>
 			<p>The sensor can be very simple, like a thermometer that measures the temperature at one spot in the house. Or it can be very complicated⁠—for example, a network of different kinds of sensors all throughout the house, feeding into a complex algorithm that references and weighs each one, providing some kind of statistical average.</p>
 			<p>The important thing is that the sensor generates a perception of the thing it’s trying to measure, the signal the control system is aiming to control. In this case, the sensor is trying to get an estimate of the temperature in the house, and it has sensed that the temperature is about 68 °F.</p>
 			<p>The thermostat also needs a part that can interpret the signal coming in from the sensor. This part of the thermostat is usually called the <strong>comparator</strong>.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXds-v0ZnE256VdAkwY0GSDOP3IljP5UcdM8Iv-EsnVCz6G6Hmg2S-l3mj-HRLDPik83D037zRWouHaieYWSwwxe4ir0M1MS51bRDMp03kZQhPAl5OcQ53iWTT5zshXz1G7ekfU4?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_comparator.png" style="width:500px"/>
 			<p/>
 			<p>We call this part the comparator because its main job is to <strong>compare</strong> the temperature perception coming from the sensor to the target temperature for the house. To compare these two things, the thermostat needs to know the target temperature. So let’s add a <strong>set point</strong>.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc53L624JZuGc4tPovxi2In9DPYD4JRqGjZx2RSBForhrfzOYTiLf45WtvmFAhgSmLE3Yge1RfNE2kOq-aGO7Hbw9CL4m9DLSeRq4GwFTj1KGDcqvXL3HtkwjW2JbsWuyxyojPbtw?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_setpoint.png" style="width:500px"/>
 			<p/>
 			<p>The target is set by a human, and in this case we can see that they set it to 72 °F. So the set point for the thermostat is 72 °F.</p>
 			<p>If the set point is 72 °F and the sensor detects a temperature of 72 °F, the thermostat doesn’t need to do anything. Everything is all good. When the perception from the sensor is the same as the set point, then assuming the sensor is working correctly, the house is the correct temperature. There is a difference of 0 °F.</p>
 			<p>But sometimes everything is not all good. Sometimes the set point is 72 °F but the sensor is only reading 68 °F, like it is here.</p>
 			<p>In this case, the comparator compares the set point (72 °F) to the perception (68 °F) and finds that there is a difference of −4 °F. The perception of the house’s temperature is four degrees colder than the target, so the house itself is about four degrees colder than we want it to be.</p>
 			<p>Having done this math, the comparator creates an <strong>error signal</strong>, which is simply the difference between the perception and the set point. If there’s no difference between the perception and the set point, then the error signal will be zero, <abbr epub:type="z3998:initialism">i.e.</abbr> no difference at all. If the error is zero, the thermostat doesn’t need to do anything. But in this case, the difference between the perception and the set point is −4 °F, so the error signal is −4 °F too.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdv6pepeKyVp3akE6ZmI4c0n3_JnLb05S-DW2niMPuRvpbV5rsofgcp-eJuB4TJzEbkQLOd4ZUhxQGvs0fThFO7Cf5qpDgIov2z2zsBwnnVXW0vgThuqZ_8o-OHATQoE3o6EATPrQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_error.png" style="width:500px"/>
 			<p/>
 			<p>For the thermostat to do its job, we need to close the loop. The final thing the thermostat needs is some way of influencing the outside world. This is often called the <strong>output function</strong> or the <strong>control element</strong>, which is the name we will use here:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcHN4IcFudagjwU2X98S5rnMTiH0ntsXKaM5hqkhhZlq7AnyU3ki-QlwdQ-jm1YHyVfAgH3olq1LaHFU8ioKZcfnL4CQCWAfrwADQB64tDZPMveuE_Fk2yfQyAaqATEjEQCtwAHCA?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_control_element.png" style="width:500px"/>
 			<p/>
 			<p>Like the sensor, the control element sticks out into the exterior world, to indicate that it can interact with things outside the thermostat.</p>
 			<p>But you’ll notice that the loop is still not closed. The control element needs ways to influence the outside world.</p>
 			<p>A really simple thermostat might have only one way to influence things⁠—it might only be able to turn on the furnace, which will raise the temperature:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1A4oUoME4hi7R6SVe-my9OiQ57ldA6Kh3DUWDM-gQ5J7-Vs5bEzPBBCL7o64yXUOGEgNwXWNiV6iF6g2p_UgHz9uAwCd2Foqs-NdAB71Qxqr99aJhOp6NHQ6yyuVRo7o2_UFw?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_furnace_onoff.png" style="width:500px"/>
 			<p/>
 			<p>But this is a pretty basic thermostat. It can’t control how hot the furnace is running, it can only turn it on or off.</p>
 			<p>It will do better if we give it more options. We can improve this thermostat by installing three settings for the furnace, like so:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe2ixeipt4Ee4g7F0N9l9RZeFm0kpWkYW6iMck2gd9-odlYj4n3kWCryhTlA6EVUXv2AwmSLRKypXBolx7vbMrTpbmDcczQSpz83ExgZf3EDiLLQYV4Q7rOb4szhvnGvyFkZKCsSA?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_furnace_levels.png" style="width:500px"/>
 			<p/>
 			<p>This is much better. If the house is just a little cold, the control element can turn on the lowest furnace setting. This will keep the thermostat from overshooting the set point and sending the temperature above 72 °F. But if the house is freezing, it can turn on the turbo setting, and drive it to the set point much more quickly.</p>
 			<p>But there’s still a problem: our poor thermostat still has no way to <em>lower</em> the temperature. If the house goes <em>above</em> 72 °F, it can’t do a thing. The temperature will go above the set point and stay there until it comes down on its own; the thermostat is powerless.</p>
 			<p>This is unacceptable. But we can fix this problem by giving the thermostat access to air conditioning:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeh0LwoKOSaKYiEkojBpziJDX9UuINM5bC0VT-aSXXR6OV91M-tDtMyXaS-Cs91bD_E0AXPg5J6EdRi7908Lnak5E6H593NRxOR8_CtysziIK81cl1iB8hkvFha9cGkDPyMsuPaRQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_ac.png" style="width:500px"/>
 			<p/>
 			<p>The control element can have many different possible outputs. Its job is to measure the error signal and decide what to do about it, and its goal is to drive the error signal to zero, or as close to zero as it can manage.</p>
 			<p>Similar to the sensor, the control element can be very simple or very complex. A simple control element might just turn on the heat any time the error signal is negative, or when the error signal is below some threshold. A more complicated control element might look at the derivative of the change in temperature over time and try to control the temperature predictively.</p>
 			<p>A very smart control element might use machine learning, or might have access to information about the weather, time of day, or day of the week, and might learn to use different strategies in different situations. You could give it a bunch of output options and just let it mess around with them, learning how different outputs influence the error signal in different ways.</p>
 			<p>More sophisticated techniques will give you a more effective control system. But as long as the control element has some way to influence the temperature, the thermostat should work ok.</p>
 			<p>Back in our example thermostat, the temperature in this house is too low, so the control element turns on the furnace. This raises the temperature, driving the error signal towards zero:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeEq26_rLc2Vr-tmvjCCwHZ3XjxjgAIObekRB5nglcoTZZsWF_XMeigUiXRP36q0m3-qMHEF6_ZHCMf5co7Xg3pGu_CfANL32_AdwQRiYBy9IMsPS1V7XiMKGG0iIAZw_Yz252Yag?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_furnace_red.png" style="width:500px"/>
 			<p/>
 			<p>Once the error signal is zero, the control element turns off the furnace:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeLr2us2WQFrTXTu-4rUfuY9JNZFz7P30uIE0_HSRXC-u_nNagr9nEvXsKajMdaFCd2BgvV50bRGJHA9zH23aCJb4WbuzAr6ynJu2qbsDcW4fXOnA3kmF1dJ3PuX5iy2Oy5sVVIPw?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_error_zero.png" style="width:500px"/>
 			<p/>
 			<p>But even with this success, it’s important for the loop to remain closed. Even when the thermostat has driven the house’s temperature to the set point, and driven the error signal to zero, the house is still subject to <strong>disturbances</strong>. People open the door, they turn on the oven, they spill ice cream on the floor. Some heat escapes through the windows, the sun beats down on the roof. Let’s add disturbances to the diagram:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXenWmwgnWdmdqr3zR1HsL4i9zT3J9-0HnAPVYRl2nPO3iCi_FEFM1rLCcT935Bc_hHLcUqN9cWaLpijCoipbn5kepKPyTh6wJ11cZ13zfxHvtz2HwF_R-m6guiYkCZBayBG2JkCvQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_disturbances.png" style="width:500px"/>
 			<p/>
 			<p>Because of these outside disturbances, the temperature of the house is always changing. To control the house’s temperature, to keep it near the set point in the face of all these disturbances, the control system needs to remain active.</p>
 			<p>This makes it easy to tell whether or not the thermostat is working like it should. <strong>Successful behavior drives the temperature (or at least the perception of that temperature) to the set point, and drives the error signal to zero.</strong> In the face of disturbances, it keeps the error signal close to zero, or quickly corrects it there.</p>
 			<p>In many older thermostats, the sensor is a bimetallic coil of brass and steel. Because of differences in the two metals, this coil expands when it gets warmer and contracts when it gets cooler. If this is all set up properly, the coil gives a decent measure of the temperature and helps the rest of the mechanism drive the house’s temperature to a given target.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQR8gZJil6Drn3LuX2EXqVv_3fPscA3FGL5ADQe3D8EuOe4Ko6iOxIJOEK9CUW2hlQZI0ldnSAHYVlOuQYS7U_WJZcQMtFP0mEdyoTQGsaOHsDsvQdXF6XUiMAEZEqED-pUqR0jjKGnHmIHEs-3fU73APl?key=ch-By0jQs97U0bnsJl0sfQ" style="width:507px;height:auto"/>
+			<img alt="" src="../images/part1/thermostat_coil.png" style="width:507px;height:auto"/>
 			<p/>
 			<p>But if you were to hold this coil closed, or tie a string around it and pull it tight enough to give a reading of 60 °F, the system will behave as though the temperature is always 60 °F. If the set point is 72 °F, the system will experience a large error signal, just as though the real temperature of the house was 60 °F, and will make a futile attempt to raise the house temperature, pushing as hard as it can, forever, until the thermostat breaks or the coil is released.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTmUFTKRJSoQDTQ8HUo4NzO9lfydZq7IiuSMdJ_r0sDrZcoDUhIF9jUB8hd3l_wvj2uDnB6pY9DEgdbINAlPf8qK88XAECPBaPOPEO4Z_X1gp1xIrRo2XSvNxmMq0Pl-Dy1l6XB8y9uMPF7SwzDCF-abI4?key=ch-By0jQs97U0bnsJl0sfQ"/>
+			<img alt="" src="../images/part1/thermostat_actual_picture.png"/>
 			<p/>
 			<p>The thing to hold on to here is that every control system produces multiple <strong>signals</strong>.</p>
 			<ol class="wp-block-list">
@@ -101,14 +101,14 @@
 				<li>If something goes wrong with the comparator, producing an incorrect error, then the control system will try to drive that error signal to zero.</li>
 				<li>If something goes wrong with the output function, any number of strange things can happen.</li>
 			</ol>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXedWV2dbra6xYMLsBeDrZZCl6E5qhWnl8eoE-xlMOoWrZLZfFmYN4wcKkkXlaNEpoupO3tgbvUoRfTdCKwaSdZQ0ei3tQwceP3ZNCTfA2B8QhEd2lIgQcK2wBrUvpO33hmspQthiQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thermostat_perception_big_error.png" style="width:500px"/>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
 			<h3 class="wp-block-heading">Hello Governor</h3>
 			<p>The thermostat is just an example; control systems are everywhere. The technical term used to describe control systems like these is “cybernetic”, and the study of these systems is called <strong>cybernetics</strong>.</p>
 			<p>Both words come from the Ancient Greek κυβερνήτης (kubernḗtēs, “steersman”), from κυβερνάω (kubernáō, “I steer, drive, guide, act as a pilot”). Norbert Wiener and Arturo Rosenblueth, who invented the word, chose this term because control systems steer or guide their targets, and because a steersman or pilot acts as a control system by keeping the ship pointed in the right direction.</p>
 			<p>The English word “governor” comes from the same root (kubernetes -&gt; gubernetes -&gt; Latin gubernator -&gt; Old French gouvreneur -&gt; Middle English governour), so <a href="https://en.wikipedia.org/wiki/Governor_(device)">control systems are sometimes called cybernetic governors, or just governors</a>.</p>
 			<p>Most famous of these is the <a href="https://en.wikipedia.org/wiki/Centrifugal_governor">centrifugal governor</a> used to regulate the speed of steam engines. Look closely at any steam engine, and you should see one of these:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_YkJLsNmG1IrOv7AVbgD-k7YMzQuKx9px7sDCahQ7YnEFv4PpFb3IoSaiEVtU7nJDpfKzFw9rXRmJ3mwKyh2XjMQ71TvS-1 hp2CK9pdZGgUTpwVDCpZNVpvF_nmqfXQyQyUBiJo-P0MeYnIfDEOD4di__?key=ch-By0jQs97U0bnsJl0sfQ" style="width:442px;height:auto"/>
+			<img alt="" src="../images/part1/steam_engine_regulator.png" style="width:442px;height:auto"/>
 			<p/>
 			<p>The engine’s output is connected to the governor by a belt or chain, so the governor spins along with the engine. As the engine starts to speed up, the governor spins faster, and its spinning balls gain kinetic energy and move outward, like they’re trying to escape.</p>
 			<p>This outward movement <a href="https://www.youtube.com/watch?v=ASIl3HWTT4U">isn’t just for show</a>; if the motion goes far enough, it causes the lever arms to pull down on a thrust bearing, which moves a beam linkage, which reduces the aperture of a throttle valve, which controls how much steam is getting into the engine. So, the faster the engine goes, the more the governor closes the valve. This keeps the engine from going too fast⁠—it controls the engine’s speed.</p>
@@ -124,7 +124,7 @@
 			</p>
 			<p>One of the first behavioral control systems to evolve must have been thirst. All animals need water; without water, they die. So the brain has a control system that aims to keep the body hydrated.</p>
 			<p>This is a control system, just like a thermostat. Hydration is the goal, but that goal needs to be measured in some way. In this case the <strong>input function</strong> seems to be a measure of <a href="https://en.wikipedia.org/wiki/Plasma_osmolality">plasma osmolality</a>, as detected by the brain. This perception is then compared to a <strong>reference value</strong> (in humans this is around 280⁠–⁠295 mOsm/kg), which generates an <strong>error signal</strong> that can drive behaviors like finding and consuming water.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXexai_ylQxYDoqH6iyAykVOoVninEmpBv6BABTH79ekVxQHUwLKZbmLOGe2PJLNVeXgsgs1XE1FXrTQHdHSvz5En3dyjw72cVGsZ5R1k9aCdvvKjfLz7IvhYRx5MWzXD2w5g50n_Q?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/thirst_chart.png" style="width:500px"/>
 			<p/>
 			<p>As we see in the diagram, in this control system <strong>the error signal is thirst</strong>. We can tell this must be the case because successful behavior drives thirst to zero. The perception of osmolality can’t be the error signal, because osmolality is driven to 280⁠–⁠295 mOsm/kg, which is how we know that number is the target or set point. <strong>Whatever value is driven towards zero must be the error signal</strong>.</p>
 			<p>Just like with a thermostat, the output function can be very simple or very complex. Organisms with simple nervous systems may have only one output; they drink water when it happens to be right in front of them. Animals that live in freshwater streams and ponds may execute a program as simple as “open your mouth”, since they are always immersed in water that is perfectly good for them to drink.</p>
@@ -136,7 +136,7 @@
 			<p>Organisms need to maintain a constant temperature, so the brain also includes systems for controlling heat and cold.</p>
 			<p>This adaptation actually consists of two different control systems⁠—one that keeps the body from getting too warm, and another that keeps the body from getting too cold. We have two separate systems, rather than one system that handles both, because of the limits of how neurons can be wired up. “Neural comparators work only for one sense of error, so two comparators, one working with inverted signals, would be required to detect both too much and too little of the sensor output level.” (Powers, 1973)</p>
 			<p>We can also appeal to intuition⁠—it <em>feels</em> entirely different to be hot or to be cold, they are totally different sensations. And when you are sick, sometimes you feel both too hot <em>and</em> too cold, something that would be impossible if this were a single system.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXewrEcl3e4JlJ721LwE4s9jKGa_2lEVvy0buotBXx9sHOhgK1_qeOSS_znSPxyZnSyV8tgrMhBTr7AuBnhUQ5NTl9hJlDC5NL0Od8a7BqOwhs3aoI7CAG23qkEm_f6J0mRUpfh77Q?key=ch-By0jQs97U0bnsJl0sfQ" style="width:600px"/>
+			<img alt="" src="../images/part1/body_temp_chart.png" style="width:600px"/>
 			<p/>
 			<p>As usual, the output function can be simple or complex. Some responses are relatively automatic, like sweating, and might not usually be considered “behavior”. But other responses, like putting on a cardigan, are definitely behavior.</p>
 			<p>This is a chance to notice something interesting. A human can shiver, sweat, put on a coat, or open a window to control their temperature. But they can also⁠ ⁠… adjust the set point on the thermostat for their house! One way a control system can act on the world is by changing the set point of a different control system, and letting that “lower” system carry out the control for it.</p>
@@ -145,7 +145,7 @@
 				<strong>Pain</strong>
 			</p>
 			<p>Organisms need to keep from getting injured, so they have ways to measure damage to their bodies, and a system to control that damage.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcOF3JFYtcv4JvyRK-G76wjNaB0_gLuKXfVMA1lmnlK6mIT3PoKnwknNDcL0m5KFZHB1a-b0NMAYAEnSkCuroThzYMrOqN_i4MfDzjWxgue-_xh7goNLq7QrazvZbef8g0cR9vzDQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/harm_pain_chart.png" style="width:500px"/>
 			<p/>
 			<p>Again, we see that pain is the error signal that’s generated in response to some kind of measure of damage or physical harm.</p>
 			<p>A very simple control system will respond to pain, and nothing else. This might be good enough for a shellfish. But a more complex approach (not pictured in this diagram) is for the control system to <em>predict</em> how much pain might be coming, and drive behavior to <em>avoid</em> that pain, instead of merely responding. Compare this to a thermostat which can tell a blizzard is incoming, and turns on the furnace in anticipation, before the cold snap actually hits.</p>
@@ -154,26 +154,26 @@
 				<strong>Hunger</strong>
 			</p>
 			<p>Most organisms need to eat in order to live. Once the food is inside your body there are other control systems that put it to the right use, but you need to express some behavior to get it there. So there’s another control system in charge of locating nutritious objects and putting them inside your gob.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfVts1K-1gbnfVqfy4Dg7WKNI7j_cdYQPGdOaC3Go61g9M-MLlEaZBH17ZRXEC4rRKau-DEWhn7yuoXBcxtN_kXvrKqHgtx0InHd6TgQDpJldVs6lAWkbxsvoxqzu6-_gCBLhMEYQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/hunger_chart.png" style="width:500px"/>
 			<p/>
 			<p>Obviously in this case, the error signal is hunger⁠—successful eating behavior tends to drive hunger to zero.</p>
 			<p>More realistically, there is not one eating control system, and not one kind of hunger, but several. There might even be dozens.</p>
 			<p>One control system probably controls something like your blood sugar level, and drives behavior that makes you put things with calories inside your mouth.</p>
 			<p>But man cannot live on calories alone, and neither can any other organism. For one thing, you definitely need salt. So there must be another control system that drives behavior to make you put salty things (hopefully salty <em>foods</em>, though <a href="https://en.wikipedia.org/wiki/Pica_(disorder)">perhaps not always</a>) inside your mouth. This is confirmed by the fact that people sometimes crave salty foods. If you’ve ever had a moose lick the salt off your car, you’ll know that we’re right.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfnzudfP07E7HFCbqd4ZHZfK0YW7xdogo_F3jRDCwOw2IXyPjWwFabDRYGED48a_MMiBEvpDlDXzpKKfwW5tBGq0sQxi4avnjnddo0cVsIAG8SIo_uKCRfgtvSit-OzAH8FVN_X?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/salt_lick_chart.png" style="width:500px"/>
 			<p/>
 			<p>It’s hard to tell exactly how many kinds of hunger there are, but humans need several different nutrients to survive, and we clearly can have cravings for many different kinds of foods, so there must be several kinds of hunger. The same goes for other animals.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1VySkuYW2FoQ_vDuzizgKoZqZH9CMUjbGwIFNqmAOm6wneLIpy3M2qhBC5Dy8z7ICUE6QvE7VatPWR8TyJOSk6l84TeRUdyfDQY_xrRiBwuErb80Dl9wkH5UXUiIklxKs0qa2Gr-wOxkE8hl4iaWjdB7k?key=ch-By0jQs97U0bnsJl0sfQ" style="width:516px;height:auto"/>
+			<img alt="" src="../images/part1/salt_lick_photo.png" style="width:516px;height:auto"/>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
 			<p>
 				<strong>Fear</strong>
 			</p>
 			<p>Organisms also need to avoid getting eaten themselves. This is somewhat more tricky than controlling things like heat and fluid levels, but evolution has found a way.</p>
 			<p>To accomplish this, organisms have been given a very complicated input function that estimates the threats in our immediate area, by weighing information like “is there anything nearby that looks or sounds like a tiger?” This input function creates a complicated perception that we might call “danger”.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe38dpWyIZKdrTDdLNcWIaU51H84pPB5ai3rd6iWvcOTpI3CTu7ipg9VnjYpDUufUa7DUa1r_DA27NZ0SwwCZxfqT3gojnNh9WQ4im661c4AW4X5s__fHKb3laOacHzg3HmAh8w8w?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/fear_chart.png" style="width:500px"/>
 			<p/>
 			<p>This danger estimate is then compared to some reference level of acceptable danger, creating the error signal of fear. If you are in more danger than is considered acceptable, you RUN AWAY (or local equivalent).</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfT4Fya96_GY8bdqGwHg4SLALlkK7N8HdPzUFWEC_HQpUN2FIaa0AU2w3L7nIfSsogGNMBKiTblA-XD3T_9XIgk8gsFvrIHV3kcRyJhHiPhNQDckG4KNzQcBnmKPJit59KhI223rqsW5D9LtlouJ4EsmfUt?key=ch-By0jQs97U0bnsJl0sfQ" style="width:434px;height:auto"/>
+			<img alt="" src="../images/part1/monty_python_runaway.png" style="width:434px;height:auto"/>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
 			<p>
 				<strong>Disgust</strong>
@@ -181,7 +181,7 @@
 			<p>Getting eaten is not the only danger we face. Organisms also need to avoid eating poisonous things that will kill them, and avoid contact with things that will expose them to disease.</p>
 			<p>Like fear, the input function here is very complicated. It’s not as simple as checking the organism’s blood osmolality or some other internal signal. Trying to figure out what things out there in the world might be poisonous or diseased is a difficult problem.</p>
 			<p>But smelling spoiled milk or looking at a rotting carcass clearly creates some kind of signal, which is compared with some reference level, and creates an error signal that drives behavior. That’s why, if you drink too much Southern Comfort and later puke it up, you’ll never want Southern Comfort again.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdNBjCXVBxBwJy6QNnY2BAzfU728a-fBT5cvmxUqBLii01mEtlsRcG4sjB4fYQukINKrBgjdyEky_E2eRCeYlNVtqUUWnnUUnkSWZgcmy0DxV3ovAHIzu-Dr5y4Ps7OCxh-LzS0QQ?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/disgust_chart.png" style="width:500px"/>
 			<p/>
 			<p>In this case, the error signal is disgust.</p>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
@@ -191,7 +191,7 @@
 			<p>Every organism needs to maintain internal homeostasis in order to survive. Organisms that can perceive the world and flop around a bit also tend to develop the ability to control things about the outside world, things like how close they get to predators. This improves their ability to survive even further.</p>
 			<p>Social organisms like humans also control social variables. It’s hard to know exactly what variables are being controlled, since they are not as simple as body temperature. They are at least as complicated as an abstract concept like “danger”⁠—something we certainly perceive and can control, but that must be very complicated.</p>
 			<p>However, we can make reasonable guesses. For one, humans control things like status. You want to make sure that your status in your social group is reasonably high, that it doesn’t go down, that it maybe sometimes even goes up.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdAWV5CI9X_aS4YFPtlee9wKVkiPuIijfavxT_HZrMevJ8gTKkHstFei_RGMbf8I1DDzBMMyqx-fYLAYYL-FltfESAOiN7UjPODVx_d8FqAgSXljhgbGRIBFrB7mfbqKyi_55-v_g?key=ch-By0jQs97U0bnsJl0sfQ" style="width:500px"/>
+			<img alt="" src="../images/part1/status_shame_chart.png" style="width:500px"/>
 			<p/>
 			<p>In this case, the error signal when status is too low is probably something like what we call shame. Sadness, loneliness, anger, and guilt all seem to be error signals for similar control systems that attempt to control other social variables.</p>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
@@ -210,7 +210,7 @@
 			<p>All of these things are of the same type, and the word for this type is “emotion”. <strong>An emotion is the error signal in a behavioral biological control system</strong>.</p>
 			<p>We say “behavioral” because your body also regulates things like the amount of copper in your blood, but there’s no emotion associated with serum copper regulation. It’s regulated internally, by processes you are unaware of, processes that may not even involve the brain. In contrast, <strong>emotions are the biological control errors that drive external behavior</strong>.</p>
 			<p>Thirst, hot, cold, shame, disgust, fear, and all the different kinds of hunger are all emotions. Other emotions include anger, pain, sleepy, need to pee, suffocation, and horny. There are probably some emotions we don’t have words for. All biological error signals that are in conscious awareness and that drive behavior are emotions.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeK2AdGMKXQnJXEVLsGNhjpP3Wgxn59NjwEanHOM1W8pV3MppFvFZRaliWL4Vn8A0UhpisVWESWDOR-UxqDDp11cLYYfAT7EuZFjX6fe0vPrwQb_unfnEgbP2R-eYlVhkE9TVG6sY-P6IUja-VO8jcc6cGH?key=ch-By0jQs97U0bnsJl0sfQ" style="width:428px;height:auto"/>
+			<img alt="" src="../images/part1/horny_food.jpg" style="width:428px;height:auto"/>
 			<figcaption class="wp-element-caption">
 				<em>See!? Emotions!</em>
 			</figcaption>
@@ -220,7 +220,7 @@
 			<p>But for many goals, there’s only a limit in one direction. You just want to make sure some variable doesn’t get too high or too low. You’ll notice that “need to pee” is an emotion, but it doesn’t have an opposite. While your bladder can be too full, it can’t be too empty, so there’s no emotion for that.</p>
 			<p>This is counterintuitive to modern psychology because academic psychologists act as though nothing of interest happens below the neck. They couldn’t possibly imagine that “hungry” or “needs to pee” could be important to the study of psychology⁠—even though most human time and energy is spent on eating, sleeping, peeing, fuckin’, <abbr class="eoc">etc.</abbr></p>
 			<p>In contrast, when the goal is to model believable human behavior, and not just to produce longwinded journal articles, these basic drives and emotions come about naturally. Even <em>The Sims</em> knew that “bladder” is one of the eight basic human motivations.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc8TyQOxptYstTTtBo95n2sennNS-XQPb29RMTB8sdo9PZQ_zdYXkKMaLqafTkw-l-ccFcXChtoolY6qB3vSb5GwwBocBmiVTcegMs2kyvRXRMF9VDwe4ja3Qy09R0fkqsQkyg4sdh5qftRWYWNPnQxOD7X?key=ch-By0jQs97U0bnsJl0sfQ"/>
+			<img alt="" src="../images/part1/sims_emotions.png"/>
 			<p/>
 			<p>This is a joke; there are more than eight motivations. But frankly, the list they came up with for <em>The Sims</em> is pretty good. It’s clear that there are drives to keep your body and your living space clean, and it seems plausible that these might be different emotions. We don’t have words for the associated emotions in English, but <em>The Sims</em> calls these motivations “Hygiene” and “Environment” (originally <a href="https://sims.fandom.com/wiki/Environment">called</a> “Room”).</p>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
@@ -244,7 +244,7 @@
 				<p>Maybe heliocentrism would have succeeded sooner if Copernicus used a different word for his remodeled category! This is a common pattern, though: an existing word is repurposed during remodeling. There is no fact-of-the-matter about whether “planet” denoted a new, different category, or if the category itself changed and kept its same name.</p>
 			</blockquote>
 			<p>So just like Copernicus, our claims aren’t false, they’re absurd. In any case, it’s too cute to hold so closely onto the current boundaries for the word “emotion”, given that the term is not even that old. Before the 1830s, English-speakers would have said “passions” or “sentiments” instead of “emotions”. So to slightly change the meaning of “emotion” is not that big a deal.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfQ41E5vG1gaVXL4TBNJnsOxz-nmAt4wtfDgfTX-5fB19yg81bnrz_QLCUt8TwKOE_UWwjDcgMNDjkSl945V11HO8gGZbc0ktwc4P1adY5WP5bipK6Xd4JqhDoz5G3LNCpkoMWGS-r6yzvw42uQ1z0bCkp5?key=ch-By0jQs97U0bnsJl0sfQ" style="width:666px;height:auto"/>
+			<img alt="" src="../images/part1/dictionaries_interstellar_meme.jpg" style="width:666px;height:auto"/>
 			<p/>
 			<p>In any case, we can use words however we want. So back to the question at hand: If happiness isn’t an emotion, or at least isn’t a cybernetic error signal, then what is it?</p>
 			<p>The answer is quite simple. People and animals have many different governors that try to maintain a signal at homeostasis, near some target or on one side of some threshold. When one of these signals is out of alignment, the governor creates an error signal, an emotion like fear or thirst. The governor then does its best to correct that error.</p>
@@ -254,7 +254,7 @@
 			<p>When errors are corrected by a large amount, or they are corrected very quickly, that creates more happiness than when they are corrected slowly and incrementally. A man who was lost in the desert will feel nothing short of bliss at his first sip of cool water⁠—he is incredibly thirsty, and correcting that very large error creates a lot of happiness.</p>
 			<p>Imagine yourself on a hot summer day. To quaff a tall glass of ice water and eliminate your thirst all at once is immensely pleasurable. To sip the same amount over the course of an hour is not nearly so good. More happiness is created when a correction is fast than when it is slow.</p>
 			<p>Or consider:</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeYQAXOp3yq0GY9F5b7bJ-QkfPBGZkqd4275krLgHg0NTIbFSiF-iYgpY_a3o5jlpKY6JIU9Sxa4fhahusvvq8lz7xiTpW-d8X_53HYtScFfC41jkdLoNv146oVpH7Ueb9tD_QHOvZlrUFMv325NPbUCIv3?key=ch-By0jQs97U0bnsJl0sfQ"/>
+			<img alt="" src="../images/part1/having_to_pee.png"/>
 			<figcaption class="wp-element-caption">
 				<a href="https://web.mit.edu/dvp/Public/TVMScript2008.pdf">
 					<em>Apparently this is from The Vagina Monologues</em>
@@ -268,7 +268,7 @@
 			<p>In this model, there are as many ways to feel bad as there are things that are being controlled. But there’s only one way to feel good. Which would mean that all of our words for positive emotion⁠—joy, excitement, pride⁠—are really referring to the same thing, just in different contexts.</p>
 			<p>Happiness is also related to the concept of “agency”, the general ability to affect your world in ways of your choosing. A greater ability to affect your world means more ability to cause large changes in any context. If you have a lot of ability to make things change, you can make big corrections in your error signals⁠—you can take the situation of being very hungry and correct that error decisively, leading to a burst of happiness.</p>
 			<p>(It may also be the case that even an arbitrary exercise of agency can make you somewhat happy, since people do seem to gain happiness from meeting some very arbitrary goals. But this is hard to distinguish from social drives⁠—maybe you are just excited at how impressed you think everyone will be when they see how many digits of pi you have memorized.)</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfi4CgktMTa327QJamulaOAHf5ERN8cneo-1uIJLpv8cwVUm_3bvOGwgmoPRGui-SLfAC0rXQaswYCgn1he8SUscTW4q-6oIgJ-axP_XkA9wUZboEsqWiiSTZXupRecVgEJjotUqaz3qKIxDnsQ_LTFCuBu?key=ch-By0jQs97U0bnsJl0sfQ" style="width:586px;height:auto"/>
+			<img alt="" src="../images/part1/organisms_using_faculties.png" style="width:586px;height:auto"/>
 			<p/>
 			<p>People are consistently surprised to find that living in posh comfort and having all your needs immediately met isn’t all that pleasurable. But with this model of happiness, it makes perfect sense. Pleasure and happiness are only generated when you are out of alignment in a profound way, a way that could legitimately threaten your very survival, and then you are brought back into alignment in a way that is literally life-affirming.</p>
 			<p>This is why people who are well-off, the idle rich in particular, often feel like their lives are pointless and empty. To have all your needs immediately met generates almost no happiness, so the persistently comfortable go through life in something of a gray fog.</p>
@@ -279,7 +279,7 @@
 				<p>The positive effects of war on mental health were first noticed by the great sociologist Emile Durkheim, who found that when European countries went to war, suicide rates dropped. Psychiatric wards in Paris were strangely empty during both world wars, and that remained true even as the German army rolled into the city in 1940. Researchers documented a similar phenomenon during civil wars in Spain, Algeria, Lebanon, and Northern Ireland. An Irish psychologist named H. A. Lyons found that suicide rates in Belfast dropped 50 percent during the riots of 1969 and 1970, and homicide and other violent crimes also went down. Depression rates for both men and women declined abruptly during that period, with men experiencing the most extreme drop in the most violent districts. County Derry, on the other hand⁠—which suffered almost no violence at all⁠—saw male depression rates rise rather than fall. Lyons hypothesized that men in the peaceful areas were depressed because they couldn’t help their society by participating in the struggle.</p>
 			</blockquote>
 			<p>Horrible events can also traumatize people, of course. Being bombed by the Luftwaffe is dangerous to your health. But in other ways, being thrust into catastrophe can be very reassuring, even affirming. We were put together in an era of constant threat, it should be no surprise that we can be functional in that kind of environment.</p>
-			<img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdrdlYhROnhuJeKpM56-bwuB0Fi_z3REtFfvk1YAdcW9mZrKAP7pif9GjjQmKdol0Ueb4bqAme-7yWoAa0QkeogXGT62xXajP3a-lnNsgg0gJR2tVn6_PqSkvpdoan_Rs1W5fkM4UeD3eF0DX_jqoQEkDV3?key=ch-By0jQs97U0bnsJl0sfQ" style="width:512px;height:auto"/>
+			<img alt="" src="../images/part1/pandemic_danger.png" style="width:512px;height:auto"/>
 			<div aria-hidden="true" class="wp-block-spacer" style="height:40px"/>
 			<h3 class="wp-block-heading">Don’t Worry, Why Happy</h3>
 			<p>So happiness isn’t an emotion, and doesn’t drive behavior. The natural question has to be, why does happiness exist at all? What function does it serve if it is not, like an emotion, helping to drive some important signal to homeostasis.</p>
