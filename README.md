@@ -5,6 +5,7 @@ steps for image clean up
 3. Macro: `qa%c$/>ESCq` to clean up the end. Then just do `@a` from the start of the img tag
 4. For captions, same `v` step, then manually do `%i/` and tap over to drop the figcaption to a new line
 5. clean up the fig capture end with `$bbbd$`. some number of b's to get through the the figure and div
+6. To do the subchapters, crip the `h3` formatting from others. Have to close sections and update wp class to epub type
 
 TODO:
 - Wire up images
