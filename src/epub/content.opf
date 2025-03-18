@@ -136,6 +136,14 @@
 		<item href="images/part3/words_known_genders.png" id="words_known_genders.png" media-type="image/png"/>
 		<item href="images/part4/rat_value_is_absurd.png" id="rat_value_is_absurd.png" media-type="image/png"/>
 		<item href="images/part4/reinforcement_update_function.png" id="reinforcement_update_function.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_bug.png" id="system_chart_happiness_bug.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_error_error.png" id="system_chart_happiness_error_error.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_error_error_zero.png" id="system_chart_happiness_error_error_zero.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_error_increased.png" id="system_chart_happiness_error_increased.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_gate_error.png" id="system_chart_happiness_gate_error.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_generate_error.png" id="system_chart_happiness_generate_error.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_less_votes.png" id="system_chart_happiness_less_votes.png" media-type="image/png"/>
+		<item href="images/part5/system_chart_happiness_signal_error.png" id="system_chart_happiness_signal_error.png" media-type="image/png"/>
 		<item href="images/prologue/atom_model_evolution.png" id="atom_model_evolution.png" media-type="image/png"/>
 		<item href="images/prologue/brain_fog_wiki.png" id="brain_fog_wiki.png" media-type="image/png"/>
 		<item href="images/prologue/complex_system_gall_quote.png" id="complex_system_gall_quote.png" media-type="image/png"/>
@@ -163,6 +171,7 @@
 		<item href="text/part-2.xhtml" id="part-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-3.xhtml" id="part-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-4.xhtml" id="part-4.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-5.xhtml" id="part-5.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/prologue.xhtml" id="prologue.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
@@ -176,6 +185,7 @@
 		<itemref idref="part-2.xhtml"/>
 		<itemref idref="part-3.xhtml"/>
 		<itemref idref="part-4.xhtml"/>
+		<itemref idref="part-5.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
 	</spine>
