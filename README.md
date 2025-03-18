@@ -7,8 +7,21 @@ steps for image clean up
 5. clean up the fig capture end with `$bbbd$`. some number of b's to get through the the figure and div
 6. To do the subchapters, crip the `h3` formatting from others. Have to close sections and update wp class to epub type
 
+Build steps:
+- `se build .`
+- `se typogrify .` (maybe not?)
+- `se semanticate .`
+- `se find-mismatched-dashes .`
+- `se build-title .`
+- `se build-manifest .`
+- `se build-spine .`
+- `se build-toc .`
+- `se clean .`
+- `se lint .` (not working)
+
 TODO:
 - Wire up images
+- Put build steps in script
 - fix lints, lots there whew
 - Clean up the colophon pages for actual publish, it's not a fully supprted standard ebook, just do a blurb thanking?
 - actually label everything?
