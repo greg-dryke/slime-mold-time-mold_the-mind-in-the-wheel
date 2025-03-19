@@ -1,3 +1,5 @@
+https://slimemoldtimemold.com/tag/the-mind-in-the-wheel/
+
 
 steps for image clean up
 1. `/<img` to search for them all
