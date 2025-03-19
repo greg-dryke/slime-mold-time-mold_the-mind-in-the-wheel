@@ -1,5 +1,10 @@
+Creating an ebook from SLIME MOLD TIME MOLD's excellent series, The Mind in the Wheel.
+
 https://slimemoldtimemold.com/tag/the-mind-in-the-wheel/
 
+Using Standard Ebooks awesome tools: https://github.com/standardebooks/tools
+
+And messily following their [standards](https://standardebooks.org/manual/1.8.1/) and [step by step guide](https://standardebooks.org/contribute/producing-an-ebook-step-by-step)
 
 steps for image clean up
 1. `/<img` to search for them all
