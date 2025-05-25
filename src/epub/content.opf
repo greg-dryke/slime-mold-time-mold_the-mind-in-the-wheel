@@ -87,6 +87,10 @@
 		<item href="css/local.css" id="local.css" media-type="text/css"/>
 		<item href="css/se.css" id="se.css" media-type="text/css"/>
 		<item href="images/cover.svg" id="cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+		<item href="images/interlude/unnamed.jpg" id="unnamed.jpg" media-type="image/jpeg"/>
+		<item href="images/interlude/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/interlude/unnamed_002.png" id="unnamed_002.png" media-type="image/png"/>
+		<item href="images/interlude/unnamed_003.png" id="unnamed_003.png" media-type="image/png"/>
 		<item href="images/logo.svg" id="logo.svg" media-type="image/svg+xml"/>
 		<item href="images/part1/body_temp_chart.png" id="body_temp_chart.png" media-type="image/png"/>
 		<item href="images/part1/dictionaries_interstellar_meme.jpg" id="dictionaries_interstellar_meme.jpg" media-type="image/jpeg"/>
@@ -148,6 +152,42 @@
 		<item href="images/part6/imperial_primacy_systems.png" id="imperial_primacy_systems.png" media-type="image/png"/>
 		<item href="images/part6/lewin_psych_fig.png" id="lewin_psych_fig.png" media-type="image/png"/>
 		<item href="images/part6/oscillations.png" id="oscillations.png" media-type="image/png"/>
+		<item href="images/part7/unnamed.jpg" id="unnamed.jpg" media-type="image/jpeg"/>
+		<item href="images/part7/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/part8/unnamed.jpg" id="unnamed.jpg" media-type="image/jpeg"/>
+		<item href="images/part8/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/part9/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/part10/unnamed.jpg" id="unnamed.jpg" media-type="image/jpeg"/>
+		<item href="images/part10/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_002.png" id="unnamed_002.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_003.png" id="unnamed_003.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_004.png" id="unnamed_004.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_005.png" id="unnamed_005.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_006.png" id="unnamed_006.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_007.png" id="unnamed_007.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_008.png" id="unnamed_008.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_009.png" id="unnamed_009.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_010.png" id="unnamed_010.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_011.png" id="unnamed_011.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_012.png" id="unnamed_012.png" media-type="image/png"/>
+		<item href="images/part10/unnamed_013.png" id="unnamed_013.png" media-type="image/png"/>
+		<item href="images/part11/unnamed.jpg" id="unnamed.jpg" media-type="image/jpeg"/>
+		<item href="images/part11/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_002.png" id="unnamed_002.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_003.png" id="unnamed_003.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_004.png" id="unnamed_004.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_005.png" id="unnamed_005.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_006.png" id="unnamed_006.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_007.png" id="unnamed_007.png" media-type="image/png"/>
+		<item href="images/part11/unnamed_008.png" id="unnamed_008.png" media-type="image/png"/>
+		<item href="images/part12/unnamed.jpg" id="unnamed.jpg" media-type="image/jpeg"/>
+		<item href="images/part12/unnamed.png" id="unnamed.png" media-type="image/png"/>
+		<item href="images/part12/unnamed_002.png" id="unnamed_002.png" media-type="image/png"/>
+		<item href="images/part12/unnamed_003.png" id="unnamed_003.png" media-type="image/png"/>
+		<item href="images/part12/unnamed_004.png" id="unnamed_004.png" media-type="image/png"/>
+		<item href="images/part12/unnamed_005.png" id="unnamed_005.png" media-type="image/png"/>
+		<item href="images/part12/unnamed_006.png" id="unnamed_006.png" media-type="image/png"/>
+		<item href="images/part12/unnamed_007.png" id="unnamed_007.png" media-type="image/png"/>
 		<item href="images/prologue/atom_model_evolution.png" id="atom_model_evolution.png" media-type="image/png"/>
 		<item href="images/prologue/brain_fog_wiki.png" id="brain_fog_wiki.png" media-type="image/png"/>
 		<item href="images/prologue/complex_system_gall_quote.png" id="complex_system_gall_quote.png" media-type="image/png"/>
@@ -171,12 +211,19 @@
 		<item href="images/titlepage.svg" id="titlepage.svg" media-type="image/svg+xml"/>
 		<item href="text/colophon.xhtml" id="colophon.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/imprint.xhtml" id="imprint.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+		<item href="text/interlude.xhtml" id="interlude.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-1.xhtml" id="part-1.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-2.xhtml" id="part-2.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-3.xhtml" id="part-3.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-4.xhtml" id="part-4.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-5.xhtml" id="part-5.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/part-6.xhtml" id="part-6.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-7.xhtml" id="part-7.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-8.xhtml" id="part-8.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-9.xhtml" id="part-9.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-10.xhtml" id="part-10.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-11.xhtml" id="part-11.xhtml" media-type="application/xhtml+xml"/>
+		<item href="text/part-12.xhtml" id="part-12.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/prologue.xhtml" id="prologue.xhtml" media-type="application/xhtml+xml"/>
 		<item href="text/titlepage.xhtml" id="titlepage.xhtml" media-type="application/xhtml+xml" properties="svg"/>
 		<item href="text/uncopyright.xhtml" id="uncopyright.xhtml" media-type="application/xhtml+xml"/>
@@ -192,6 +239,13 @@
 		<itemref idref="part-4.xhtml"/>
 		<itemref idref="part-5.xhtml"/>
 		<itemref idref="part-6.xhtml"/>
+		<itemref idref="part-7.xhtml"/>
+		<itemref idref="interlude.xhtml"/>
+		<itemref idref="part-8.xhtml"/>
+		<itemref idref="part-9.xhtml"/>
+		<itemref idref="part-10.xhtml"/>
+		<itemref idref="part-11.xhtml"/>
+		<itemref idref="part-12.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
 	</spine>
