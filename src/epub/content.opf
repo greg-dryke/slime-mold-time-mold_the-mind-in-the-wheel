@@ -246,6 +246,5 @@
 		<itemref idref="part-11.xhtml"/>
 		<itemref idref="part-12.xhtml"/>
 		<itemref idref="colophon.xhtml"/>
-		<itemref idref="uncopyright.xhtml"/>
 	</spine>
 </package>
