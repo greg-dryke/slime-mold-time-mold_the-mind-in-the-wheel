@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" epub:prefix="z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: https://standardebooks.org/vocab/1.0" xml:lang="en-US">
+	<head>
+		<title>Part VIII: Artificial Intelligence</title>
+		<link href="../css/core.css" rel="stylesheet" type="text/css"/>
+		<link href="../css/local.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body epub:type="bodymatter z3998:fiction">
+		<section id="part-8" epub:type="chapter">
+			<h2 epub:type="title"><span epub:type="label">Part</span> <span epub:type="z3998:roman">VIII</span>: Artificial Intelligence</h2>
+			<p>Some “artificial intelligence” is designed like a tool. You put in some text, it spits out an image. You give it a prompt, it keeps predicting the following tokens. End of story.</p>
+			<p>But other “artificial intelligence” is more like an organism. These agentic AI are designed to have goals, and to meet them.</p>
+			<p>Agentic AI is usually designed around a <strong>reward function</strong>, a description of things that are “rewarding” to the agent, in the somewhat circular sense that the agent is designed to maximize reward.</p>
+			<p>Reward-maximizing agents are inherently dangerous, for a couple of reasons that can be stated plainly.</p>
+			<p><strong>First,</strong><a href="https://en.wikipedia.org/wiki/Goodhart%27s_law"><strong>Goodhart’s law</strong></a><strong> </strong>(“When a measure becomes a target, it ceases to be a good measure.”) means that the goal we intend the agent to have will almost never be the goal it ends up aiming for.</p>
+			<p>For example, you might want a system that designs creatures that can move very fast. So you give the agent a reward function that rewards the design of creatures with high velocities. Unfortunately the agent responds with the strategy, “creatures grow really tall and generate high velocities by falling over”. This matches the goal as stated, but does not really give you what you want.</p>
+			<p>Even with very simple agents, this happens <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml">all the time</a>. The agent does not have to be very “intelligent” in the normal sense to make this happen. It’s just in the nature of reward functions.</p>
+			<p>This is also called goal mis-specification. Whatever goal you think you have specified, you almost always specify something else by mistake. When the agent pursues its real goal, that may cause problems.</p>
+			<p><strong>Second, complexity.</strong> Simple goals are hard enough. But anything with complex behavior will need to have a complex reward function.This makes it very difficult to know you’re pointing it in the right direction.</p>
+			<p>You might think you can train your agent to have complex goals. Let it try various things and say, “yes, more of that” and “no, less of that” until it has built up a reward function that tends to give the behavior we want. This might work in the training environment, but because the reward function has been inferred through training, we don’t know what that reward function really is. It might actually be maximizing something weird. And you might not learn what it’s really maximizing until it’s too late to stop it.</p>
+			<p>The third and most serious reason is that <strong>anything insatiable is dangerous</strong>. Something that always wants more, and will stop at nothing to get it, is a problem. For a reward-maximizing agent, no amount of reward can ever be enough. It will always try to drive reward to infinity.</p>
+			<img alt="" src="../images/part8/unnamed.jpg"/>
+			<figcaption class="wp-element-caption">
+				<em>This seems fine</em>
+			</figcaption>
+			<p/>
+			<p>This is part of why AI fears usually center around runaway maximizers. The silly but canonical example is an AI with a reward function with a soft spot for office supplies, so it <a href="https://en.wikipedia.org/wiki/Universal_Paperclips">converts all matter in the universe into paperclips</a>.</p>
+			<p>The same basic idea applies to any reward maximizer. If the United States Postal Service made an AI to deliver packages, and designed it to get a reward every time a package was delivered, that AI would be incentivized to find a way to deliver as many packages as possible, for the minimum possible descriptions of “deliver” and “packages”, by any means necessary. This would probably lead to the destruction of all humans and soon all life on earth.</p>
+			<p>But there are reasons to be optimistic.</p>
+			<p>For starters, <strong>the main reason to expect that artificial intelligence is possible is the existence of natural intelligence</strong>. If you can build a human-level intelligence out of carbon, it seems reasonably likely that you could build something similar out of silicon.</p>
+			<p>But humans and all other biological intelligences are <strong>cybernetic minimizers</strong>, not reward maximizers. We track multiple error signals and try to reduce them to zero. If all our errors are at zero — if you’re on the beach in Tahiti, a drink in your hand, air and water both the perfect temperature — we are mostly comfortable to lounge around on our chaise.</p>
+			<img alt="" src="../images/part8/unnamed.png" style="width:453px;height:auto"/>
+			<figcaption class="wp-element-caption">
+				<em>Could an artificial intelligence do THIS?</em>
+			</figcaption>
+			<p/>
+			<p>As a result, it’s not actually clear if it’s possible to build a maximizing intelligence. The only intelligences that exist are minimizing. There has never been a truly intelligent reward maximizer (if there had, we would likely all be dead), so there is no proof of concept. The main reason to suspect AI is possible is that natural intelligence already exists — us.</p>
+			<p>That said, it may still be possible to build a maximizing agent. If we do, there’s reason to suspect it will be very different from us, since it will be built on different principles. And there’s reason to suspect it would be very dangerous.</p>
+			<p>A reward maximizer doesn’t need to be intelligent to be dangerous. Maximizing pseudointelligences could still be very dangerous. Viruses are not very smart, but they can still kill you and your whole family.</p>
+			<p>We should avoid building things with reward functions, since they’re inherently dangerous. Instead, if you must build artificial intelligences, make them cybernetic, like us.</p>
+			<p>This is preferable because cybernetic minimizers are relatively safe. Once they get to their equivalent of “lying on the beach in Tahiti with a piña colada in hand” they won’t take any actions.</p>
+			<p>If the United States Postal Service designed an AI so that it minimizes the delivery time of packages instead of being rewarded for each successful delivery, it might still stage a coup to prevent any new packages from being sent. But once no more packages are being sent, it should be perfectly content to go to sleep. It will not try to consume the universe — it just wants to keep a number near zero.</p>
+			<p>Reward maximizers are always unstable. Even very simple reinforcement learning agents show <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRPiprOaC3HsCf5Tuum8bRfzYUiKLRqJmbOoC-32JorNdfyTiRRsR7Ea5eWtvsWzuxo8bjOxCG84dAg/pubhtml">very crazy specification behaviors</a>. But control systems can be made very stable. They have their own problems, but we use them all the time, in thermostats, cruise control, satellites, and nuclear engineering. These systems work just fine. When control systems do fail, they usually fail by overreacting, underreacting, oscillating wildly, freaking out in an endless loop, giving up and doing nothing, and/or exploding. This is bad for the system, and bad when the system controls something important, like a nuclear power plant. But it doesn’t destroy the universe.</p>
+			<p>At the most basic level, these two approaches are the two kinds of feedback loops. Cybernetic agents run on <strong>negative feedback loops</strong>, which generally go towards zero and are relatively safe. Reward-maximizing agents are an example of <strong>positive feedback loops</strong>, which given enough resources will always go towards infinity, so they’re almost always dangerous. Remember, a nuclear explosion is a classic positive feedback loop. The only reason nuclear explosions stop is that they run out of fuel.</p>
+			<p>A possible rebuttal to this argument is that even if an agent is happy to move towards a resting state and then do nothing, it will still be interested in gaining as much power as possible so it can achieve its goals in the future. The technical term here is <a href="https://en.wikipedia.org/wiki/Instrumental_convergence">instrumental convergence</a>.</p>
+			<p>Here we can appeal to observations of the cybernetic intelligences all around us. Humans, dogs, deer, mice, squid, etc. do not empirically seem to spend every second of their downtime maniacally working to gather more resources and power. Even with our unique human ability to plan far ahead, we often seem to use our free time to watch TV.</p>
+			<p>This suggests that instrumental convergence is not a problem for cybernetic agents. When more power is needed to correct its error, maybe a governor will vote for actions that increase the agent’s power. But if it already has enough power to correct its error, the governor will prefer to correct its error straightaway. This suggests we pursue instrumental goals like “gather more power and resources” mainly when we don’t have the capabilities we need to effectively cover all our drives.</p>
+			<p>Finally, a few things we should mention.</p>
+			<p>Cybernetic intelligences can’t become paperclip maximizers, but they can still be dangerous for other reasons. Hitler was not a paperclip maximizer, but even as a mere cybernetic organism, he was still pretty dangerous. So be careful with AI nonetheless.</p>
+			<p>Cybernetically controlling one or more values is good, natural even. But controlling derivatives (the rate of change in some value) is bad! You will end up with runaway growth that looks almost the same as a reward maximizer.If you design your cybernetic greenhouse AI to control the rate of growth of plants in your greenhouse (twice as many plants every week!), <a href="https://en.wikipedia.org/wiki/Wheat_and_chessboard_problem">very soon it will need to control the whole universe to give you the number of plants you implicitly requested</a>.</p>
+			<p>Controlling second derivatives (rate of change of the rate of change) is VERY BAD. Controlling third and further derivatives is right out.</p>
+		</section>
+	</body>
+</html>
