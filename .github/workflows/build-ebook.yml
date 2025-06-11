@@ -1,0 +1,23 @@
+name: Build Ebook
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Standard Ebooks tools
+        run: |
+          git clone https://github.com/standardebooks/tools ~/se-tools
+          cd ~/se-tools
+          ./se install
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Clean and build
+        run: |
+          se clean .
+          se lint . || true
+          se build .
