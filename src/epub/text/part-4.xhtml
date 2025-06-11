@@ -57,9 +57,9 @@
 				<p>We probably won’t have to invent the exact rules that run inside a mouse’s head when it’s learning to manage all those levers. Our guess is that many of these algorithms have already been discovered, in past research on <strong>reinforcement learning</strong>.</p>
 				<p>A complete recap of reinforcement learning is beyond the scope of this book, but we can give you a rough sense, and suggest the few tweaks it might need to fit into our new paradigm.</p>
 				<p>There are many kinds of reinforcement learning algorithms, but the difference between them isn’t our current focus. For today we’ll use Q-learning as our example, a model-free algorithm that uses this update function:</p>
-				<figure class="wp-block-image">
-					<img alt="" src="../images/part4/reinforcement_learning_function.png"/>
-				</figure>
+                                <figure class="wp-block-image">
+                                        <img alt="" src="../images/part4/reinforcement_update_function.png"/>
+                                </figure>
 				<p/>
 				<p>Q-learning works by keeping track of the value of different actions A the agent can take in states S. The function Q(S, A) gives us the value of taking action A in state S.</p>
 				<p>This update function describes how the value representation of Q(S, A), the current estimate of the value of choosing action A in state S, changes in the light of new evidence.</p>
